@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import {
   Card,
+  CardAction,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -17,12 +17,9 @@ export default function LoginPage() {
     <main className="grid grid-cols-12 items-center min-w-[720px] justify-center min-h-screen bg-blue-100">
       <div className="grid col-span-6">
         <Card className="w-full m-auto max-w-sm min-w-sm bg-blue-50 text-blue-600 shadow-lg">
-          <CardHeader className="text-center">
-            <CardTitle>Faça login na sua conta</CardTitle>
-            <CardDescription>
-              Insira seu email abaixo para entrar na sua conta.
-            </CardDescription>
-          </CardHeader>
+          <CardAction className="w-full flex justify-end pr-2">
+            <Button variant="link">Sign Up</Button>
+          </CardAction>
           <CardContent>
             <form>
               <div className="flex flex-col gap-6">
